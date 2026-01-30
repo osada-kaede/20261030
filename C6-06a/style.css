@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+/* メニュー共通スタイル */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  font-size: 1.5rem;
+}
+.menu a {
+  color: #0bd;
+  padding: .5rem;
+  text-decoration: none;
+  transition: color .4s;
+}
+.menu a:hover {
+  color: #05b;
+}
+
+/* ホバーでラインが移動する */
+.menu-container {
+  position: relative;
+}
+.magic-line {
+  position: absolute;
+  bottom: -14px; 
+  left: 0;
+  width: 0;             /* 初期状態では0幅 */
+  height: 2px;          /* ラインの太さ */
+  background-color: #05b;
+  transition: .3s;
+}
+
+/* 基本スタイル */
+body {
+  padding: 1rem;
+}

@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* 基本スタイル */
+h1{
+    text-align: center;
+    margin: 50vh 0;
+}
+
+img{
+    display: block;
+    margin: 0 auto 6rem;
+    min-width: 400px;
+    height: auto;
+}
+
+/* ぼかし効果のスタイル */
+.blur-img{
+    opacity: 0;
+    transition: 1s ease-in-out;
+    filter: blur(20px);
+    transform: 100px;
+}
+
+.blur-img.show{
+    opacity: 1;
+    filter: blur(0);
+    translate: 0;
+}
